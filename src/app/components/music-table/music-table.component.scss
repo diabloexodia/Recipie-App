@@ -1,0 +1,47 @@
+
+.searchbar{
+    border: 2px solid red;
+}
+.sorting{
+    display: flex;
+    gap: 2px;
+    
+    width: 100%;
+    height: 90px;
+}
+
+.th{
+    width: 100%;
+    
+    
+}
+.thead-light th:hover .hide {
+    display: flex;
+   
+    gap: 20px;
+    height: 25% ;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    border-radius: 35px;
+    visibility:visible ;
+  }
+.material-symbols-outlined{
+   font-weight: 500;
+   font-size: 15px;
+}
+.hide {
+    visibility: hidden;
+    height: 100%;
+    
+ }
+
+ .text-overflow {
+    max-width: 25ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+ }
+ button{
+    width: 50%;
+ }
