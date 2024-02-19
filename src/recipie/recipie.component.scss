@@ -1,0 +1,249 @@
+.br{
+    border: 1px solid red
+}
+
+.todays{
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    
+    align-items: center;
+    font-style: normal;
+    font-size: 65px ;
+}
+.df{
+    display: flex;
+}
+.dfc{
+    display: flex;
+    flex-direction: column;
+}
+.g2-as{
+    gap:2%;
+    align-items: flex-start;
+}
+.maincontainer{
+   padding : 1%;
+   gap: 2%;
+ 
+    height: 100vh;
+    width: 100%;
+}
+.visuals{
+    padding:10px;
+    justify-content: space-evenly;
+    gap:3%;
+    background-color: #ffcc09;
+    height:30vh; 
+    border-radius: 20px;   
+}
+.ingredients{
+    width: 30%;
+    height: 5.8rem;
+    text-align: center;
+    background-color: #ffcc09;
+    border-radius: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.ul-ingredients{
+    list-style: none;
+}
+
+.ingredients-title{
+    text-align: center;
+    height: 100%;
+ 
+    font-family: "Borel";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    
+    width: 100%;
+}
+.cat-loc{
+    background-color: #f1f1f0;
+    border-radius: 20px;
+    padding-left: 5px;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f0;
+    width: 283px;
+    box-shadow: 0px 8px 16px 0px  rgb(255, 204, 9,0.4);
+    z-index: 1;
+  }
+
+  .dropdown-content li {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    // width: 100%;
+    color: #171613;
+    padding: 12px 16px;
+    text-decoration: none;
+    
+  }  
+.go2{
+    gap:2%;
+}
+  .ingredients:hover .dropdown-content {
+    display: block;
+  }
+.recipie-details{
+    row-gap: 5px;
+    width: 100%;
+}
+.tags{
+    align-items: center;
+   gap: 7px;
+   background-color: #ffcc09;
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 20px;
+    font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 35px;
+}
+.instructions{
+    background-color: #ffcc09;
+    font-family: "Cherry Swash", serif;
+    font-weight: 200;
+    padding-left: 15px;
+    border-radius: 20px;
+    font-style: 20px;
+}
+
+.tags-list{
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    
+    align-items: center;
+    font-style: normal;
+    font-size: 25px ;
+    gap:5%;
+}
+.tags-list--span{
+    height: 30px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #a1953b;
+    // align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.mealthumb{
+    width: fit-content;
+    height: 100%;
+    // overflow: hidden;
+}
+.image-thumb{
+    width: fit-content;
+    height: 98%;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    
+}
+.meal-video{
+    width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    height: 98%;
+}
+.mealname{
+    font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  
+  font-size: 65px;
+  font-style: normal;
+}
+.fw{
+    color: #f9f9f9;
+  
+}
+.g2{
+    gap:2%;
+    align-items: center;
+}
+.location{
+    font-size:10px;
+    }
+.material-symbols-outlined {
+    
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+ 
+}
+.fs-220{
+    font-size: 100px;
+}
+.fs-50{
+    font-size:50px;
+}
+.fs-20{
+    font-size:20px;
+}
+.cateroy{
+    width: 50%;
+   
+}
+.category{
+    font-size:20px;
+}
+
+.fy{
+
+    color: #ffcc09; 
+}
+
+.fg{
+    color: #555050;
+    font-family: "Arima", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+}
+.fs-50{
+    font-size: 50px;
+}
+
+.title{
+    justify-content: center;
+}
+.main{
+    justify-content: center;
+
+
+}
+.random-generate-button{
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color:  #ffcc09; ;
+    width: 120px;
+    height: 50px;
+}
+.title-name{
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+.df{
+    display:flex;
+
+}
+.g2{
+    gap:2%;
+    align-items: center;
+}
