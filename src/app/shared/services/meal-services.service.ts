@@ -11,6 +11,11 @@ export class MealServicesService {
 
   mealsArray$: Subject<modifiedRecipieType> = new Subject();
 
+
+  /**
+   * This is a function that makes an HTTP GET request to the server
+   * @returns an observable only once and then stops emitting
+   */
   getData():Observable<getRecipieType>{
     const url= 'https://www.themealdb.com/api/json/v1/1/random.php';
     return this.http.get<getRecipieType>(url)

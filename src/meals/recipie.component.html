@@ -1,0 +1,81 @@
+<div class="title df g2">
+    <span class="material-symbols-outlined fs-50">
+        casino
+    </span>
+    <h1 class="title-name"> Random Recipie Generator</h1>
+
+</div>
+
+<div class="main df g2">
+    <button type="button" class="random-generate-button" routerLink="" (click)="getRecipieData()">Get Recipie</button>
+
+</div>
+<div class="maincontainer  dfc" *ngIf="displayContent && mealsArray.strYoutube!==''">
+    <div class="visuals df">
+        <div class="todays fw dfc ">
+            <span> Today's Recipie </span>
+            <span class="material-symbols-outlined fs-220 ">
+                skillet
+            </span>
+        </div>
+        <div class="mealthumb ">
+            <img src="{{mealsArray.strMealThumb}}" class="image-thumb">
+        </div>
+        <div class="youtube ">
+            <iframe [src]='safeURL' frameborder="0" class="meal-video"></iframe>
+        </div>
+    </div>
+    <div class="content go2 df ">
+        <div class="ingredients ">
+            <span class="ingredients-title fw"> Ingredients and Measurements</span>
+            <div class="dropdown-content">
+                <ul class="ul-ingredients" *ngFor="let ingredients of mealsArray.ingredients; let i = index">
+                    <li><Span><b>{{ingredients}}</b> : {{mealsArray.measurements[i]}}</Span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="recipie-details dfc  ">
+            <div class="tags df ">
+                <span class="material-symbols-outlined fs-20">
+                    sell
+                </span>
+                <div class="" *ngFor="let tags of mealsArray.strTags">
+                    <div class="tags-list df fw">
+                        <span class="tags-list--span df">{{tags}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mealdetails  dfc ">
+                <div class="mealname df g2-as">
+                    <span class="material-symbols-outlined fs-50">
+                        restaurant_menu
+                    </span>
+                    <span class="fy">{{mealsArray.strMeal}}</span>
+                </div>
+                <div class="cat-loc df g2 fg">
+                    <div class="cateroy df fg"> <span class="fg"><b>Category</b> : </span><span class="fg">
+                            {{mealsArray.strCategory}}</span></div>
+                    <div class="meal-area df fg">
+                        <span class="material-symbols-outlined fs-20">
+                            location_on
+                        </span><span class="fg ">
+                            {{mealsArray.strArea}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="instructions dfc">
+                <h2> <u>Instructions </u></h2>
+                <ol class="instruction-orederedlist" *ngFor="let instruction of mealsArray.strInstructions">
+                    <li class="instruction-list df fw"><span class="instruction-list--span df
+                        ">{{instruction}}</span></li>
+                </ol>
+            </div>
+            <div class="source"><span>
+                    Click here to visit the <a href="{{mealsArray.strSource}}" target="_blank">Source</a>
+
+                </span></div>
+        </div>
+    </div>
+
+</div>
