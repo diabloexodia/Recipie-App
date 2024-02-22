@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RecipieRoutingModule } from './recipie-routing.module';
-import { RecipieComponent } from './recipie.component';
+import { recipeRoutingModule } from './meals-routing.module';
+import { mealsComponent } from './meals.component';
+import { RecipeComponent } from './Pages/recipe/recipe.component';
 
 @NgModule({
-  declarations: [RecipieComponent],
-  imports: [CommonModule, RecipieRoutingModule],
+  declarations: [mealsComponent, RecipeComponent],
+  imports: [CommonModule, recipeRoutingModule],
 })
-export class RecipieModule {}
+export class mealsModule {}
